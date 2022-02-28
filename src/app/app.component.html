@@ -1,8 +1,6 @@
 <h1> Usename </h1>
 <hr>
 <input type="text" class="form-control"[(ngModel)]="userName" />
-<button class="btn btn-primary"
-[disabled]="!allowAddName"
-(click)="onCreatNameItem()"
->เพิ่มรายชื่อ</button>
+{{txtUsename}}
+<button class="btn btn-primary"[disabled]="userName === ''"(click)="onCreatNameItem()">เพิ่มรายชื่อ</button>
 <p>{{nameItemCreationStatus}}</p>
